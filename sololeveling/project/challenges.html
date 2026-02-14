@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="system-screen">
+    <div class="system-panel">
+      <!-- Header -->
+      <div class="system-header">
+        <span class="icon">!</span>
+        <span class="title">TODAY CHALLENGE</span>
+      </div>
+
+      <!-- Body: title + missions list -->
+      <div class="system-body">
+        <p id="challenge-title"></p>
+
+        <!-- JS yahan missions (checkbox list) inject karega -->
+        <ul id="mission-list"></ul>
+      </div>
+
+      <!-- Bottom actions: Back + Rewards -->
+      <div id="panel-bottom-actions" class="bottom-actions">
+        <button class="btn challange" id="backBtn">
+          BACK
+        </button>
+
+        <button class="btn challange"
+                onclick="window.location.href='rewards.html'">
+          REWARDS
+        </button>
+      </div>
+
+      <!-- Error message (agar missions complete nahi hue) -->
+      <p id="error-msg"></p>
+    </div>
+  </div>
+
+  <script src="challenges.js"></script>
+</body>
+</html>
