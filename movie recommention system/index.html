@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineSense — Movie Recommendations</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="description" content="Discover personalized movie recommendations. Search, explore trends, and find what to watch next.">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#" class="nav-logo">
+        <i class="ri-film-line"></i> CineSense
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#trending" class="nav-link">Trending</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#cta" class="nav-link">Get Started</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Find the next favorite movie</h1>
+        <p>Smart recommendations based on taste, mood, and what’s trending right now.</p>
+
+        <form id="searchForm" class="search-wrap" autocomplete="off" role="search">
+          <i class="ri-search-line"></i>
+          <input id="searchInput" type="text" placeholder="Search movies, genres, or actors..." aria-label="Search movies"/>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="hero-tags">
+          <span class="tag">Action</span>
+          <span class="tag">Drama</span>
+          <span class="tag">Sci‑Fi</span>
+          <span class="tag">Comedy</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="poster poster-1"></div>
+        <div class="poster poster-2"></div>
+        <div class="poster poster-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section id="trending" class="section container">
+    <div class="section-head">
+      <h2>Trending now</h2>
+      <a href="#" class="link">View all <i class="ri-arrow-right-line"></i></a>
+    </div>
+
+    <div id="grid" class="grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why CineSense</h2>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="ri-magic-line"></i>
+          <h3>Personalized picks</h3>
+          <p>Tailored lists from watch history, ratings, and preferred genres.</p>
+        </div>
+
+        <div class="feature">
+          <i class="ri-line-chart-line"></i>
+          <h3>Real‑time trends</h3>
+          <p>See what’s hot this week across platforms and regions.</p>
+        </div>
+
+        <div class="feature">
+          <i class="ri-smartphone-line"></i>
+          <h3>Every screen</h3>
+          <p>Fully responsive experience that feels native on mobile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section id="cta" class="section cta">
+    <div class="container cta-inner">
+      <h2>Ready to get recommendations?</h2>
+      <p>Start with a quick search or connect a profile to unlock smarter picks.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary">Start now</a>
+        <a href="#features" class="btn btn-ghost">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="nav-logo"><i class="ri-film-line"></i> CineSense</a>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+      <p class="copy">© <span id="year"></span> CineSense. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
