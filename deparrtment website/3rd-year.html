@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3rd Year Students - IT Department</title>
+  <link rel="stylesheet" href="year.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 IT Department - 3rd Year Students</h1>
+    </header>
+    <section class="form-section">
+      <input type="text" id="rollNo" placeholder="Roll No (e.g. IT22A101)" maxlength="15" required />
+      <input type="text" id="firstName" placeholder="First Name" maxlength="20" required />
+      <input type="text" id="lastName" placeholder="Last Name" maxlength="20" required />
+      <button id="addBtn">Add Student</button>
+    </section>
+
+    <section class="list-section">
+      <h2>Student List (Total: <span id="count">0</span>)</h2>
+      <ul id="studentList" aria-live="polite"></ul>
+      <button id="clearBtn" class="clear-btn">Clear All Data</button>
+    </section>
+
+    <nav>
+      <a href="2nd-year-students.html" class="nav-link" aria-label="View 2nd Year Students">← 2nd Year Students</a>
+    </nav>
+  </div>
+  <script src="3rd.js"></script>
+</body>
+</html>
